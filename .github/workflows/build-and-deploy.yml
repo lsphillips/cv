@@ -38,7 +38,7 @@ jobs:
         run: npm test
 
       - name: Build
-        run: npm run build -- --env baseUri=/cv
+        run: npm run build -- --env baseUri=/cv/
 
       - name: Package
         uses: actions/upload-pages-artifact@v2
