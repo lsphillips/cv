@@ -1,0 +1,221 @@
+person:
+  name: Luke S. Phillips
+  tagline: Software Engineer in London, United Kingdom
+  keywords:
+    - Luke Phillips
+    - United Kingdom
+    - London
+    - Software Engineer
+    - Web Developer
+    - Programmer
+  summary: A full stack software engineer based in London who loves JavaScript and has a strong interest in serverless technologies.
+  avatar: images/avatar.png
+  introduction: |
+    I am an ambitious problem solver and full stack developer with a strong interest in serverless technologies. I love writing well designed software that is cost effective. I am a keen learner and I like to know how things work; I continually evaluate and upgrade my skills so that I can stay at the cutting edge in all aspects of development whilst contributing to open source along the way.
+
+contact:
+  email: slWYt1FdvR2WzBXasxWaoB3cs1FdhtVbvNWX09GZbxWah12Z
+  linkedin: https://linkedin.com/in/lukesphillips
+  github: https://github.com/lsphillips
+
+skills:
+
+  - name: Back-End Web Development
+    level: Expert
+    buzzwords:
+      - Node.js
+      - PHP
+      - .NET Core
+      - MySQL
+      - Elasticsearch
+      - S3
+      - DynamoDB
+      - Lambda
+      - SNS/SQS
+      - Step Functions
+      - REST
+      - TDD
+      - Serverless
+      - Kafka
+    description: |
+      Solid understanding of HTTP and back-end development. Experienced in designing and developing performant, scalable and cost-effective applications by leveraging various cloud technologies to employ microservice and event based architectures.
+
+  - name: Front-End Web Development
+    level: Expert
+    buzzwords:
+      - HTML5
+      - CSS
+      - JavaScript
+      - Sass
+      - Less
+      - TypeScript
+      - Webpack
+      - Rollup
+      - Module Federation
+      - React
+      - Vue
+      - Web Components
+      - Lit
+      - WebGL
+    description: |
+      Extensive experience with developing accessible and responsive web applications; leveraging data-binding and other cutting edge technologies to deliver impressive application-like experiences to users on all platforms. I also have experience with employing micro-frontend architectures to produce cohesive web applications that are implemented by multiple independent teams.
+
+  - name: Developer Operations
+    level: Expert
+    buzzwords:
+      - AWS
+      - Jenkins
+      - GitHub Actions
+      - Ansible
+      - Docker
+      - Git
+      - StatsD
+      - Prometheus
+      - Grafana
+      - OpenTelemetry
+      - Terraform
+    description: |
+      Experienced with continuous integration and continuous deployment practices with a strong interest in cloud services and scalable & distributed architecture.
+
+  - name: Automation Testing
+    level: Proficient
+    buzzwords:
+      - BDD
+      - Cucumber
+      - Selenium
+      - Galen
+      - Cypress
+    description: |
+      Confident in developing robust functional test suites for distributed systems, web services and web-based graphical interfaces.
+
+jobs:
+
+  - title: Lead Engineer
+    company: Just Eat Takeaway
+    logo: images/brands/just-eat-takeaway.png
+    started: 2022-07-01
+    projects:
+      - name: OneApp
+        summary: I contributed to the first phase of consolidating the Just Eat and Takeaway platforms that aims to provide a single customer experience across all markets while maintaining the existing back-office systems. I designed transitional components that ensured changes made to restaurants on the Takeaway platform appeared on the Just Eat platform; utilizing emerging technologies such as Kafka and Kafka Connect.
+      - name: Serverless Guild
+        summary: I manage the Serverless Guild, working with AWS and engineers across the business to foster a knowledge-sharing environment. The guild provides support and produces best practice documentation and guides for working with serverless technologies, such as Lambda, DynamoDB, Step Functions, and API Gateway. Through my work, I've been able to facilitate collaboration and encourage the adoption of serverless technologies across the organization.
+    description: |
+      I oversee four teams, across three technical platforms and across three timezones; collectively these teams are responsible for restaurant data, scheduled availability, delivery areas, and restaurant operational tooling.
+
+      My overarching goal has been to consolidate these domains on the Just Eat and Takeaway platform; aiming for one team owning a single set of services for each domain, enabling the domains to move forward faster and reducing duplication. I've been developing transition plans following the strangler fig pattern and working closely with product managers and stakeholders to ensure they understand the technical constaints and existing behaviors that downstream systems require to be maintained.
+
+      Additionally, I collaborate with guilds and principal engineers to shape platform guidance, notably around asynchronous messaging, and work with my teams to implement them. I make time to produce proof-of-concepts and experiment with new technologies, enabling me to give my teams more informed guidance. Furthermore, I ensure that my teams have the necessary time to work on larger technical initiatives by feeding into the delivery planning process.
+
+  - title: Senior Engineer
+    company: Just Eat Takeaway
+    logo: images/brands/just-eat-takeaway.png
+    started: 2017-06-01
+    finished: 2022-07-01
+    projects:
+      - name: Restaurant Performance
+        summary: I played a key role in developing an event-driven system that aggregated partner order and review data from across the platform to generate a performance score. This score was easily accessible by partners and included improvement recommendations while also affecting the partner's search ranking.
+      - name: Just Log
+        summary: As the lead contributor, I supported the development of a lightweight and extensible JavaScript library for logging. This library enables quick and easy pushing of logs to multiple sources, including Just Eat's ELK stack. I also provided valuable support teams across the business, ensuring successful implementation of the library.
+      - name: Orderpad Lite
+        summary: I was the lead engineer for a progressive web application, I enabled restaurants to continue taking orders even when they experienced Orderpad hardware issues. I was selected for this project due to my extensive front-end experience and was able to deliver a viable product within a month, complete with a comprehensive test suite and hand-over documentation.
+      - name: Restaurant Creation Service
+        summary: I designed an event-driven service that orchestrates the setup of new restaurants joining the platform, greatly reducing manual effort in the onboarding process while ensuring they conform to compliance checks before activation. Utilizing serverless technology, the service is extensible and allows for efficient development of new quality gates and market-specific flows.
+    description: |
+      As a senior full-stack engineer, I contributed to multiple autonomous teams building products on the AWS platform before becoming the tech lead for the team responsible for restaurant information, scheduled availability, and delivery areas, which was central to many critical business processes.
+
+      In this role, I was the team's technical point of contact and was responsible for taking business requirements and designing scalable solutions. I worked with my team to build, test, deploy, and support these solutions in production. In addition, I managed the team's technical debt backlog and on-call rota.
+
+      I emphasized open communication, fostering an environment where anyone in the team could get involved in a problem. I also enjoyed sharing my newfound knowledge that I gained from being an active participant in guilds with the team through presentations, tech demos, and direct mentoring, encouraging others to do the same.
+
+  - title: Web Developer
+    company: Channel 4
+    logo: images/brands/channel4.png
+    started: 2013-06-01
+    finished: 2017-06-01
+    projects:
+      - name: Channel4.com
+        summary: I lead the development on the responsive redesign of the Channel4.com website. This involved migrating away from a monolithic Java application to smaller more manageable applications written using Node.js that consumed Channel 4's central web services.
+      - name: Font Delivery Service
+        summary: A Node.js service that hosts and delivers the Channel 4 fonts to all of our web-based clients as securely as possible. Starting as a personal project, it replaced a 3rd party service called FontDeck, saving Channel 4 £15,000 a year.
+      - name: Chromecast
+        summary: Liaised with Google to create the Chromecast receiver and the sender for the Channel 4 website.
+    description: |
+      Worked as a full stack web developer in an agile team; building and testing highly accessible, responsive and cross platform web applications on the All 4 platform.
+
+  - title: Engineering Intern
+    company: Channel 4
+    logo: images/brands/channel4.png
+    started: 2010-09-01
+    finished: 2013-05-01
+    projects:
+      - name: 4oD
+        summary: I was put on the 4oD team to develop the front end of the the 2011 refresh of the 4oD website.
+      - name: 4Emergencies
+        summary: An SMS-based emergency notification system, built in C# .NET and MS SQL, allowing the HR department to ask for the status of all employees with a single SMS message or email.
+    description: |
+      Whilst studying at the University of Westminster, I was an intern at Channel 4 where I focused on integrating University modules into the workplace whilst working on projects for the business.
+
+qualifications:
+
+  - name: BEng Software Engineering (First Class Honours)
+    school: University of Westminster
+    started: 2010-09-01
+    completed: 2013-05-01
+    description: |
+      I had received the School of Electronics and Computer Science Achievement Award for 3 consecutive years; an award given to students who have performed particularly well in their studies.
+
+      For my final year project, I produced a JavaScript library that emulated the OpenGL 2.x specification using WebGL powered by a flexible GLSL shader.
+
+projects:
+
+  - name: Weiß Schwarz API
+    url: https://ws-api.dev
+    description: |
+      A data API for the Japanese card game Weiß Schwarz. This is a static API that is generated at build time by aggregating data from multiple data sources, utilizing the OpenAPI specification for documentation.
+
+  - name: Vintage Tea Party
+    url: https://vintageteaparty.co
+    description: |
+      A project to support a friend's small business. A responsive website hosted for free in GitLab that employs a Jamstack architecture; utilizing web components powered by Lit for progressive enhancements and Netlify CMS for user friendly content management.
+
+  - name: Crumble
+    url: https://github.com/lsphillips/Crumble
+    description: |
+      A RFC-6265 compliant library that makes reading and writing cookies easy.
+
+  - name: WaitForTheElement
+    url: https://github.com/lsphillips/WaitForTheElement
+    description: |
+      A utility that will fetch an element by waiting for it to exist.
+
+  - name: YouAreCancelled
+    url: https://github.com/lsphillips/YouAreCancelled
+    description: |
+      An implementation of the cooperative cancellation model that is heavily inspired by the .NET implementation.
+
+  - name: RuntimeError
+    url: https://github.com/lsphillips/RuntimeError
+    description: |
+      A better error that is inspired by the Java exception that is also serializable to JSON.
+
+  - name: Log2stream
+    url: https://github.com/lsphillips/Log2stream
+    description: |
+      A Node.js logging library with an interface inspired by Log4j but removes the concepts of appenders and layouts in favour of streams.
+
+  - name: KoCo
+    url: https://github.com/lsphillips/KoCo
+    description: |
+      Adds support for the Konami Code; making your website automatically cool.
+
+interests:
+  hobbies:
+    - Programming
+    - Computer Hardware
+    - Gaming
+    - ROM Hacking
+    - Japanese Culture
+    - Board Games
+    - Long Walks
+  summary: |
+    Outside the workplace, I enjoy coding and tinkering with my Raspberry Pis. Away from the computer I enjoy playing board games and card games. I also love to travel to Japan whenever I get the chance as I love their culture, especially the otaku side of it.

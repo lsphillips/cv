@@ -1,0 +1,40 @@
+.freeform
+{
+	font-size: 0.875rem;
+
+	h3,
+	h4
+	{
+		color: #333;
+	}
+
+	p
+	{
+		padding: 10px 0 0;
+
+		&:first-of-type { padding: 0 }
+	}
+
+	strong { color: #333 }
+
+	ul,
+	ol
+	{
+		margin: 0 0 10px 30px;
+		list-style-type: circle;
+
+		&:last-child { margin-bottom: 0 }
+	}
+
+	li
+	{
+		margin: 10px 0 0;
+
+		@media print { page-break-inside: avoid }
+	}
+
+	a
+	{
+		&:extend(.link all);
+	}
+}

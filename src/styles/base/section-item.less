@@ -1,0 +1,50 @@
+.section-item
+{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 0 15px;
+	margin: 15px 0;
+	border-bottom: 1px solid #eee;
+
+	&:last-child
+	{
+		border: 0;
+		padding: 0;
+	}
+}
+
+.section-item__header
+{
+	margin: 0 0 10px;
+}
+
+.section-item__icon
+{
+	&:extend(.image);
+
+	flex: 0 0 0;
+	display: block;
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	margin: 0 10px 10px 0;
+	border-radius: 2px;
+}
+
+.section-item__title
+{
+	color: #333;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+
+.section-item__byline
+{
+	display: block;
+	font-size: 0.813rem;
+}
+
+.section-item__content
+{
+	flex: 1 100%;
+}

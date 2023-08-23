@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en-GB" dir="ltr">
+
+	<head>
+
+		<base href="{{ __settings__.baseUri }}" />
+
+		<!-- Title -->
+
+		<title>
+			{{ person.name }} - {{ person.tagline }}
+		</title>
+
+		<!-- Character Set -->
+
+		<meta charset="utf-8" />
+
+		<!-- Viewport -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Icons -->
+
+		<link rel="icon" href="/assets/favicon/32x32.png"   sizes="32x32"   />
+		<link rel="icon" href="/assets/favicon/128x128.png" sizes="128x128" />
+		<link rel="icon" href="/assets/favicon/192x192.png" sizes="192x192" />
+		<link rel="icon" href="/assets/favicon/512x512.png" sizes="512x512" />
+
+		<!-- Apple Icon -->
+
+		<link rel="apple-touch-icon" href="/assets/favicon/180x180.png" />
+
+		<!-- Keywords -->
+
+		<meta name="keywords" content="{{ comma-separate person.keywords }}" />
+
+		<!-- Description -->
+
+		<meta name="description" content="{{ person.summary }}" />
+
+	</head>
+
+	<body class="page">
+
+		<div class="page__content">
+
+			<!-- Introduction -->
+
+			<header class="introduction">
+
+				{{#if person.avatar }}
+					<img class="introduction__avatar" src="{{ person.avatar }}" alt="" loading="lazy" />
+				{{/if}}
+
+				<h1 class="introduction__name"> {{ person.name }} </h1>
+
+				<h2 class="introduction__title"> {{ person.tagline }} </h2>
+
+			</header>
+
+			<!-- Contact Information -->
+
+			<ul class="contact">
+
+				<li class="contact__method">
+					<span class="contact__vendor"> Email </span> <span class="contact__email"> Available on request </span>
+				</li>
+
+				<li class="contact__method">
+					<span class="contact__vendor"> Phone </span> Available on request
+				</li>
+
+				<li class="contact__method">
+					<span class="contact__vendor"> LinkedIn </span> <a class="contact__link" href="{{ contact.linkedin }}" target="_blank" rel="noreferrer">
+						{{ schemeless contact.linkedin }}
+					</a>
+				</li>
+
+				<li class="contact__method">
+					<span class="contact__vendor"> GitHub </span> <a class="contact__link" href="{{ contact.github }}" target="_blank" rel="noreferrer">
+						{{ schemeless contact.github }}
+					</a>
+				</li>
+
+			</ul>
+
+			<!-- About -->
+
+			<section class="about" id="about">
+
+				<h2 class="about__title"> About </h2>
+
+				<div class="about__description">
+
+					{{#markdown}}
+						{{ person.introduction }}
+					{{/markdown}}
+
+				</div>
+
+			</section>
+
+			<!-- Skills -->
+
+			<section class="skills" id="skills">
+
+				<h2 class="skills__title"> Skills </h2>
+
+				{{#each skills as |skill| }}
+
+					<article class="skill">
+
+						<h3 class="skill__name">
+							{{ skill.name }} <span class="skill__level skill__level--{{ kebab-case skill.level }}"> {{ skill.level }} </span>
+						</h3>
+
+						<ul class="skill__buzzwords">
+
+							{{#each skill.buzzwords as |buzzword| }}
+								<li class="skill__buzzword"> {{ buzzword }} </li>
+							{{/each}}
+
+						</ul>
+
+						<div class="skill__description">
+							{{#markdown}}
+								{{ skill.description }}
+							{{/markdown}}
+						</div>
+
+					</article>
+
+				{{/each}}
+
+			</section>
+
+			<!-- Experience -->
+
+			<section class="experience" id="experience">
+
+				<h2 class="experience__title"> Experience </h2>
+
+				{{#each jobs as |job| }}
+
+					<article class="job">
+
+						{{#if job.logo }}
+							<img class="job__brand" src="{{ job.logo }}" alt="" loading="lazy" />
+						{{/if}}
+
+						<header class="job__header">
+
+							<h3 class="job__title"> {{ job.company }}, {{ job.title }} </h3>
+
+							<small class="job__duration">
+								<time datetime="{{ date job.started 'YYYY-MM-DD' }}"> {{ date job.started 'MMMM YYYY' }} </time> &dash; {{#if job.finished }} <time datetime="{{ date job.finished 'YYYY-MM-DD' }}"> {{ date job.finished 'MMMM YYYY' }} </time> {{else}} Present {{/if}}
+							</small>
+
+						</header>
+
+						<div class="job__description">
+
+							{{#markdown}}
+								{{ job.description }}
+							{{/markdown}}
+
+							{{#if job.projects }}
+
+								{{#if job.finished }}
+									<p> Some examples of what I've worked on were: </p>
+								{{else}}
+									<p> Some examples of what I've worked on are: </p>
+								{{/if}}
+
+								<ul>
+									{{#each job.projects as |project| }}
+										<li>
+											<h4> {{ project.name }} </h4>
+											<p>
+												{{#markdown inline=true}}
+													{{ project.summary }}
+												{{/markdown}}
+											</p>
+										</li>
+									{{/each}}
+								</ul>
+
+							{{/if}}
+
+						</div>
+
+					</article>
+
+				{{/each}}
+
+			</section>
+
+			<!-- Education -->
+
+			<section class="education" id="education">
+
+				<h2 class="education__title"> Education </h2>
+
+				{{#each qualifications as |qualification| }}
+
+					<article class="qualification">
+
+						<header class="qualification__header">
+
+							<h3 class="qualification__title"> {{ qualification.name }} </h3>
+
+							<small class="qualification__school">
+								{{ qualification.school }} &middot; <time datetime="{{ date qualification.started 'YYYY-MM-DD' }}"> {{ date qualification.started 'YYYY' }} </time> &dash; <time datetime="{{ date qualification.completed 'YYYY-MM-DD' }}"> {{ date qualification.completed 'YYYY' }} </time>
+							</small>
+
+						</header>
+
+						<div class="qualification__description">
+
+							{{#markdown}}
+								{{ qualification.description }}
+							{{/markdown}}
+
+						</div>
+
+					</article>
+
+				{{/each}}
+
+			</section>
+
+			<!-- Projects -->
+
+			<section class="projects" id="projects">
+
+				<h2 class="projects__title"> Personal Projects </h2>
+
+				{{#each projects as |project| }}
+
+					<article class="project">
+
+						<header class="project__header">
+
+							<h3 class="project__name">
+								{{ project.name }}
+							</h3>
+
+							<a class="project__repository" href="{{ project.url }}" target="_blank" rel="noreferrer">
+								{{ schemeless project.url }}
+							</a>
+
+						</header>
+
+						<div class="project__description">
+
+							{{#markdown}}
+								{{ project.description }}
+							{{/markdown}}
+
+						</div>
+
+					</article>
+
+				{{/each}}
+
+			</section>
+
+			<!-- Interests -->
+
+			<section class="interests" id="interests">
+
+				<h2 class="interests__title"> Interests &amp; Hobbies </h2>
+
+				<ul class="interests__hobbies">
+
+					{{#each interests.hobbies as |hobby| }}
+						<li class="interests__hobby">
+							{{ hobby }}
+						</li>
+					{{/each}}
+
+				</ul>
+
+				<div class="interests__summary">
+
+					{{#markdown}}
+						{{ interests.summary }}
+					{{/markdown}}
+
+				</div>
+
+			</section>
+
+		</div>
+
+		<script type="text/javascript">
+
+			window.addEventListener('DOMContentLoaded', function ()
+			{
+				cv.enhance({
+					email : '{{ contact.email }}'
+				})
+			});
+
+		</script>
+
+	</body>
+
+</html>
