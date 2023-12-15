@@ -12,7 +12,7 @@
     "dependencies" :
     {
         "moment" : "2.29.4",
-        "markdown-it" : "13.0.2"
+        "markdown-it" : "14.0.0"
     },
 
 	"devDependencies" :
