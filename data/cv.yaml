@@ -169,7 +169,7 @@ qualifications:
 projects:
 
   - name: Weiß Schwarz API
-    url: https://ws-api.dev
+    url: https://ws-api.dev/v1.0/docs
     description: |
       A data API for the Japanese card game Weiß Schwarz. This is a static API that is generated at build time by aggregating data from multiple data sources, utilizing the OpenAPI specification for documentation.
 
