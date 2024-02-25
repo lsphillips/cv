@@ -178,6 +178,11 @@ projects:
     description: |
       A project to support a friend's small business. A responsive website hosted for free in GitLab that employs a Jamstack architecture; utilizing web components powered by Lit for progressive enhancements and Netlify CMS for user friendly content management.
 
+  - name: BPS
+    url: https://github.com/lsphillips/bps
+    description: |
+      A library and CLI tool for creating and applying BPS (Binary Patching System) patches.
+
   - name: Crumble
     url: https://github.com/lsphillips/Crumble
     description: |
