@@ -184,32 +184,32 @@ projects:
       A library and CLI tool for creating and applying BPS (Binary Patching System) patches.
 
   - name: Crumble
-    url: https://github.com/lsphillips/Crumble
+    url: https://github.com/lsphillips/crumble
     description: |
       A RFC-6265 compliant library that makes reading and writing cookies easy.
 
   - name: WaitForTheElement
-    url: https://github.com/lsphillips/WaitForTheElement
+    url: https://github.com/lsphillips/wait-for-the-element
     description: |
       A utility that will fetch an element by waiting for it to exist.
 
   - name: YouAreCancelled
-    url: https://github.com/lsphillips/YouAreCancelled
+    url: https://github.com/lsphillips/you-are-cancelled
     description: |
       An implementation of the cooperative cancellation model that is heavily inspired by the .NET implementation.
 
   - name: RuntimeError
-    url: https://github.com/lsphillips/RuntimeError
+    url: https://github.com/lsphillips/run-time-error
     description: |
       A better error that is inspired by the Java exception that is also serializable to JSON.
 
   - name: Log2stream
-    url: https://github.com/lsphillips/Log2stream
+    url: https://github.com/lsphillips/log2stream
     description: |
       A Node.js logging library with an interface inspired by Log4j but removes the concepts of appenders and layouts in favour of streams.
 
   - name: KoCo
-    url: https://github.com/lsphillips/KoCo
+    url: https://github.com/lsphillips/ko-co
     description: |
       Adds support for the Konami Code; making your website automatically cool.
 
