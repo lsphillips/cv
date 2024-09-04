@@ -1,7 +1,7 @@
 function obfuscate (email)
 {
 	return Buffer.from(
-		email.split('@').reverse().join('@').replaceAll('@', '[at]').replaceAll('.', '[dot]')
+		email.trim().split('@').reverse().join('@').replaceAll('@', '[at]').replaceAll('.', '[dot]')
 	)
 		.toString('base64').split('').reverse().join('');
 }
