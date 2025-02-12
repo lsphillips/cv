@@ -1,5 +1,5 @@
-import { resolve }              from 'path';
-import { readFile }             from 'fs/promises';
+import { resolve }              from 'node:path';
+import { readFile }             from 'node:fs/promises';
 import * as yaml                from 'js-yaml';
 import CssMinimizerPlugin       from 'css-minimizer-webpack-plugin';
 import MiniCssExtractPlugin     from 'mini-css-extract-plugin';
@@ -33,7 +33,7 @@ export default async function config ({
 		entry :
 		{
 			'cv' : [
-				'./src/cv.js'
+				'./src/scripts/cv.js'
 			]
 		},
 
