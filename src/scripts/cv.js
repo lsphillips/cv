@@ -1,9 +1,9 @@
-import './styles/cv.less';
+import '../styles/cv.less';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-import { onImageLoad }         from './enhancements/lazy-image-detector.js';
-import { createEmailRevealer } from './enhancements/email-revealer.js';
+import { onImageLoad }         from './lazy-image-detector.js';
+import { createEmailRevealer } from './email-revealer.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
