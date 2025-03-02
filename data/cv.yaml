@@ -168,11 +168,6 @@ qualifications:
 
 projects:
 
-  - name: Weiß Schwarz API
-    url: https://ws-api.dev/docs
-    description: |
-      A data API for the Japanese card game Weiß Schwarz. This is a static API that is generated at build time by aggregating data from multiple data sources, utilizing the OpenAPI specification for documentation.
-
   - name: Vintage Tea Party
     url: https://vintageteaparty.co
     description: |
