@@ -19,7 +19,7 @@
 	{
         "webpack" : "5.98.0",
         "webpack-cli" : "6.0.1",
-        "webpack-dev-server" : "5.2.0",
+        "webpack-dev-server" : "5.2.1",
         "webpack-watch-files-plugin" : "1.2.1",
         "html-webpack-plugin" : "5.6.3",
         "css-minimizer-webpack-plugin" : "7.0.2",
@@ -35,12 +35,9 @@
         "core-js" : "3.41.0",
         "@babel/core" : "7.26.10",
         "@babel/preset-env" : "7.26.9",
-        "eslint" : "9.23.0",
-		"eslint-plugin-import" : "2.31.0",
-		"eslint-plugin-promise" : "7.2.1",
+        "eslint" : "9.24.0",
         "eslint-plugin-n" : "17.17.0",
-        "@stylistic/eslint-plugin-js" : "4.2.0",
-		"eslint-config-protect-me-from-my-stupidity" : "14.0.0"
+		"eslint-config-protect-me-from-my-stupidity" : "15.0.0"
 	},
 
 	"scripts" :
