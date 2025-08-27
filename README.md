@@ -40,7 +40,7 @@ npm run start
 ```
 
 > [!TIP]
-> Changes in [client JavaScript](src/scripts), [stylesheets](src/styles), [templates](src/templates), [resources](src/resources) and the [website data](data) will trigger the website to be rebuilt automatically.
+> Changes in [client JavaScript](src/scripts), [stylesheets](src/styles), [templates](src/templates) and the [CV data](data) will trigger the website to be rebuilt automatically.
 
 ### Code Quality
 
