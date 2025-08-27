@@ -1,0 +1,34 @@
+.qualification
+{
+	display: block;
+	padding: 0 0 15px;
+	margin: 15px 0;
+	border-bottom: 1px solid #eee;
+
+	&:last-child { padding: 0; border: 0 }
+}
+
+.qualification__header
+{
+	margin: 0 0 10px;
+}
+
+.qualification__title
+{
+	padding: 0;
+	margin: 0;
+	color: #333;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+
+.qualification__school
+{
+	display: block;
+	font-size: 0.813rem;
+}
+
+.qualification__description
+{
+	/* Here to remind that it exists. */
+}

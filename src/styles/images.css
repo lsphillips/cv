@@ -1,7 +1,12 @@
-.image
+img
 {
 	opacity: 0;
 	transition: opacity 800ms ease;
+
+	&.loaded
+	{
+		opacity: 1;
+	}
 
 	@media print { opacity: 1 }
 }
