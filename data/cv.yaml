@@ -9,7 +9,7 @@ person:
     - Web Developer
     - Programmer
   summary: A full stack software engineer based in London who loves JavaScript and has a strong interest in serverless technologies.
-  avatar: images/avatar.png
+  avatar: avatar.png
   introduction: |
     I am an ambitious problem solver and full stack developer with a strong interest in serverless technologies. I love writing well designed software that is cost effective. I am a keen learner and I like to know how things work; I continually evaluate and upgrade my skills so that I can stay at the cutting edge in all aspects of development whilst contributing to open source along the way.
 
@@ -92,7 +92,7 @@ jobs:
 
   - title: Staff Engineer
     company: Just Eat Takeaway
-    logo: images/brands/just-eat-takeaway.png
+    logo: brands/just-eat-takeaway.png
     started: 2022-07-01
     projects:
       - name: OneApp
@@ -108,7 +108,7 @@ jobs:
 
   - title: Senior Engineer
     company: Just Eat Takeaway
-    logo: images/brands/just-eat-takeaway.png
+    logo: brands/just-eat-takeaway.png
     started: 2017-06-01
     finished: 2022-07-01
     projects:
@@ -129,7 +129,7 @@ jobs:
 
   - title: Web Developer
     company: Channel 4
-    logo: images/brands/channel4.png
+    logo: brands/channel4.png
     started: 2013-06-01
     finished: 2017-06-01
     projects:
@@ -144,7 +144,7 @@ jobs:
 
   - title: Engineering Intern
     company: Channel 4
-    logo: images/brands/channel4.png
+    logo: brands/channel4.png
     started: 2010-09-01
     finished: 2013-05-01
     projects:

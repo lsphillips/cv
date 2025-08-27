@@ -1,0 +1,43 @@
+.skill
+{
+	display: block;
+	padding: 0 0 15px;
+	margin: 15px 0;
+	border-bottom: 1px solid #eee;
+
+	&:last-child { padding: 0; border: 0 }
+}
+
+.skill__name
+{
+	padding: 0;
+	margin: 0 0 10px;
+	color: #333;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+
+.skill__level
+{
+	display: inline-block;
+	padding: 1px 6px;
+	margin: 0 0 0 5px;
+	font-weight: bold;
+	font-size: 0.75rem;
+	color: #555;
+	white-space: nowrap;
+	border-radius: 2px;
+}
+
+.skill__level--expert     { color: #fff; background: #337ab7 }
+.skill__level--proficient { color: #fff; background: #5bc0de }
+
+.skill__buzzwords
+{
+	margin: 0 0 5px;
+}
+
+.skill__description
+{
+	/* Here to remind that it exists. */
+}

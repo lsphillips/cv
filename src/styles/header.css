@@ -1,0 +1,83 @@
+.introduction
+{
+	padding: 0 0 25px;
+	margin: 20px 0;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.introduction__avatar
+{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 10px;
+	border-radius: 50%;
+	border: 1px solid #dfdfdf;
+
+	@media print { display: none }
+}
+
+.introduction__name
+{
+	padding: 0;
+	margin: 0;
+	font-size: 1.5rem;
+	color: #333;
+	text-align: center;
+}
+
+.introduction__title
+{
+	padding: 0;
+	margin: 0;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 1.25rem;
+}
+
+.contact
+{
+	list-style: none;
+	overflow: hidden;
+	margin: 20px 0;
+	padding: 0;
+	font-size: 0.875rem;
+}
+
+.contact__method
+{
+	display: block;
+	float: left;
+	width: 25%;
+	padding: 10px;
+	margin: 0;
+	line-height: 1.25rem;
+	text-align: center;
+	box-sizing: border-box;
+
+	@media screen and (max-width: 800px)
+	{
+		width: 50%;
+	}
+
+	@media screen and (max-width: 500px)
+	{
+		width: 100%;
+		padding: 10px 0;
+		text-align: left;
+	}
+
+	@media print { padding: 10px 0 }
+}
+
+.contact__vendor
+{
+	display: block;
+	color: #333;
+	font-weight: bold;
+}
+
+.contact__link
+{
+	/* Here to remind that it exists. */
+}

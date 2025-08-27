@@ -4,45 +4,50 @@
 
 The source code for the CV of Luke S. Phillips, which can be viewed here: www.lsphillips.com/cv
 
-## Development
+## CV Data
 
-This project is split into two parts:
+The CV is generated from the `cv.yaml` file found in the [data](data) directory.
 
-- **The CV source**\
-  Contained in the `src` directory. This is where the design and functionality is defined.
-- **The CV data**\
-  Contained in the `data` directory. This is where the content is defined.
-
-**Please Note:** Node.js is required because NPM scripts are used to facilitate the build process.
+If the CV requires an image, then the image file should be put in the [data/images](data/images) directory. The image paths in the CV data file should be relative to that directory, for example if the image is at `data/images/avatar.png` then the path should be just `avatar.png`.
 
 ### Email Obfuscation
 
-To help mitigate against email scraping, the contact email address is expected to be obfuscated. To obfuscate an email address for the data files, use this tool:
+To help mitigate against email scraping, the contact email address is expected to be obfuscated. To obfuscate an email address for the data files, run this command:
 
-```
+``` bash
 npm run obfuscate-email -- {email}
 ```
 
-## Building
+## Development
 
-To build a deployable artifact:
+> [!NOTE]
+> You will need [Node.js](https://nodejs.org/) v24 (or higher) installed.
 
-```
+### Building
+
+To build a deployable bundle in the `website` directory, run this command:
+
+``` bash
 npm run build
 ```
 
-This will create a `site` directory containing the compiled HTML, CSS and JavaScript for the CV.
-
 ### Running locally
 
-To setup a seamless development environment:
+To run the website on a local development server running on port `1992`, run this command:
 
-```
+``` bash
 npm run start
 ```
 
-This will perform a build in memory and serve it using a local web server on port `1992`. It will watch all source and data files for changes, where the site will be rebuilt when such changes occur.
+> [!TIP]
+> Changes in [client JavaScript](src/scripts), [stylesheets](src/styles), [templates](src/templates), [resources](src/resources) and the [website data](data) will trigger the website to be rebuilt automatically.
 
-## Deployment
+### Code Quality
 
-The site is hosted through GitHub Pages. The deployment is faciliated by the [Build & Deploy](.github/workflows/build-and-deploy.yml) GitHub Action Workflow, where it will perform a build and deploy the resulting artifact GitHub Pages.
+To perform code quality checks, powered by ESLint, run this command:
+
+``` bash
+npm run start
+```
+
+Please refer to the [eslint.config.js](eslint.config.js) file to familiar yourself with the rules.
