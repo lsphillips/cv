@@ -11,7 +11,7 @@ person:
   summary: A full stack software engineer based in London who loves JavaScript and has a strong interest in serverless technologies.
   avatar: avatar.png
   introduction: |
-    I am an ambitious problem solver and full stack developer with a strong interest in serverless technologies. I love writing well designed software that is cost effective. I am a keen learner and I like to know how things work; I continually evaluate and upgrade my skills so that I can stay at the cutting edge in all aspects of development whilst contributing to open source along the way.
+    I am an ambitious problem solver and full stack developer who's a keen learner and likes to know how things work. I continually evaluate and refine my skills so that I can stay at the cutting edge in all aspects of development whilst contributing to open source along the way.
 
 contact:
   email: =Q3YhRnbvNWX0F2Wt92YdR3bkt1cwlGbslGawNHb
@@ -27,16 +27,16 @@ skills:
       - PHP
       - .NET Core
       - MySQL
-      - Elasticsearch
+      - PostgreSQL
       - S3
       - DynamoDB
       - Lambda
       - SNS/SQS
-      - Step Functions
       - REST
       - TDD
       - Serverless
       - Kafka
+      - Benthos
     description: |
       Solid understanding of HTTP and back-end development. Experienced in designing and developing performant, scalable and cost-effective applications by leveraging various cloud technologies to employ microservice and event based architectures.
 
@@ -46,17 +46,17 @@ skills:
       - HTML5
       - CSS
       - JavaScript
-      - Sass
       - Less
+      - Tailwind
       - TypeScript
       - Webpack
-      - Rollup
+      - ESBuild
       - Module Federation
       - React
       - Vue
-      - Web Components
       - Lit
       - WebGL
+      - Jamstack
     description: |
       Extensive experience with developing accessible and responsive web applications; leveraging data-binding and other cutting edge technologies to deliver impressive application-like experiences to users on all platforms. I also have experience with employing micro-frontend architectures to produce cohesive web applications that are implemented by multiple independent teams.
 
@@ -74,19 +74,21 @@ skills:
       - Grafana
       - OpenTelemetry
       - Terraform
+      - Kubernetes
     description: |
       Experienced with continuous integration and continuous deployment practices with a strong interest in cloud services and scalable & distributed architecture.
 
-  - name: Automation Testing
-    level: Proficient
+  - name: AI Integration Development
+    level: Learning
     buzzwords:
-      - BDD
-      - Cucumber
-      - Selenium
-      - Galen
-      - Cypress
+      - MCP
+      - RAG
+      - A2A
+      - Semantic Kernel
+      - GitHub Copilot
+      - OpenAI
     description: |
-      Confident in developing robust functional test suites for distributed systems, web services and web-based graphical interfaces.
+      Focusing my learning on AI architecture, with an emphasis on exposing functionality to LLMs to enable agentic behavior. I'm also actively exploring tools such as GitHub Copilot and Cursor to optimize my development workflows.
 
 jobs:
 
@@ -97,14 +99,12 @@ jobs:
     projects:
       - name: OneApp
         summary: I contributed to the first phase of consolidating the Just Eat and Takeaway platforms that aims to provide a single customer experience across all markets while maintaining the existing back-office systems. I designed transitional components that ensured changes made to restaurants on the Takeaway platform appeared on the Just Eat platform; utilizing emerging technologies such as Kafka and Kafka Connect.
-      - name: Serverless Guild
-        summary: I manage the Serverless Guild, working with AWS and engineers across the business to foster a knowledge-sharing environment. The guild provides support and produces best practice documentation and guides for working with serverless technologies, such as Lambda, DynamoDB, Step Functions, and API Gateway. Through my work, I've been able to facilitate collaboration and encourage the adoption of serverless technologies across the organization.
     description: |
-      I oversee four teams, across three technical platforms and across three timezones; collectively these teams are responsible for restaurant data, scheduled availability, delivery areas, and restaurant operational tooling.
+      I oversee six teams, across three timezones and two technical platforms; collectively these teams are responsible for partner data, availability, reachability, verification (KYC & KYB), onboarding and various support tooling.
 
-      My overarching goal has been to consolidate these domains on the Just Eat and Takeaway platform; aiming for one team owning a single set of services for each domain, enabling the domains to move forward faster and reducing duplication. I've been developing transition plans following the strangler fig pattern and working closely with product managers and stakeholders to ensure they understand the technical constaints and existing behaviors that downstream systems require to be maintained.
+      My overarching goal has been to consolidate these domains on the Just Eat and Takeaway platform; aiming for one team owning a single set of services for each domain, enabling the domains to move faster whilst reducing duplication. I've developed transition plans following the Strangler Fig pattern and working closely with product managers and stakeholders to ensure they understand the technical constaints and existing behaviors that dependant systems require to be maintained.
 
-      Additionally, I collaborate with guilds and principal engineers to shape platform guidance, notably around asynchronous messaging, and work with my teams to implement them. I make time to produce proof-of-concepts and experiment with new technologies, enabling me to give my teams more informed guidance. Furthermore, I ensure that my teams have the necessary time to work on larger technical initiatives by feeding into the delivery planning process.
+      Additionally, I collaborate with other teams, guilds and principal engineers to shape platform guidance notably around asynchronous messaging, HTTP API design and Lambda development practices. I make time to produce proof-of-concepts and experiment with new technologies, enabling me to give my teams more informed guidance. Furthermore, I ensure that my teams have the necessary time to work on larger technical initiatives by feeding into the delivery planning process.
 
   - title: Senior Engineer
     company: Just Eat Takeaway
@@ -210,12 +210,11 @@ projects:
 
 interests:
   hobbies:
+    - Badminton
+    - Board Games
     - Coding
     - Home Automation
-    - Video Games
-    - ROM Hacking
     - Japanese Culture
-    - Board Games
-    - Long Walks
+    - Video Games
   summary: |
-    Outside the workplace, I enjoy coding and tinkering with my Raspberry Pis. Away from the computer I enjoy playing board games and looking after my leopard gecko and guinea pigs. I also love to travel to Japan whenever I get the chance as I love their culture.
+    Outside the workplace, I enjoy coding, tinkering with my Raspberry Pis and tweaking my Arch Linux setup. Away from the computer I enjoy playing board games, treating my Guinea Pigs like royalty and playing Badminton. I also love to travel to Japan whenever I get the chance as I love to explore their culture.
