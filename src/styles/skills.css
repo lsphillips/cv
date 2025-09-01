@@ -31,6 +31,7 @@
 
 .skill__level--expert     { color: #fff; background: #337ab7 }
 .skill__level--proficient { color: #fff; background: #5bc0de }
+.skill__level--learning   { color: #fff; background: #32cd32 }
 
 .skill__buzzwords
 {
