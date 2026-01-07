@@ -112,7 +112,7 @@ jobs:
       - name: One App
         summary: I contributed to the first phase of consolidating the Just Eat and Takeaway platforms that aims to provide a single customer experience across all markets while maintaining the existing back-office systems. I designed transitional components that ensured changes made to restaurants on the Takeaway platform appeared on the Just Eat platform; utilizing emerging technologies at the company such as Kafka and Kafka Connect.
       - name: One Backoffice
-        summary: Following the One App initiative, I led the transition from a transitional architecture to a single back-office system for my domains, I designing and documenting Strangler Fig-based migrations with anti-corruption layers and aligning stakeholders to deliver the changes in steps that wouldn't disrupt our dependent systems.
+        summary: Following the One App initiative, I led the transition from a transitional architecture to a single back-office system for my domains, I designed and documented Strangler Fig-based migration plans with anti-corruption layers and aligned with stakeholders to deliver the changes in steps that wouldn't disrupt our dependent systems.
     description: |
       Led six cross-functional teams delivering products across three technical platforms in the UK, Canada, and the Netherlands; collectively these teams are responsible for partner data, availability, reachability, verification (KYC & KYB), onboarding and various support tooling.
 
