@@ -36,7 +36,7 @@ skills:
       - TDD
       - Serverless
       - Kafka
-      - Benthos
+      - Redpanda Connect
     description: |
       Solid understanding of HTTP and back-end development. Experienced in designing and developing performant, scalable and cost-effective applications by leveraging various cloud technologies to employ microservice and event based architectures.
 
@@ -58,7 +58,7 @@ skills:
       - WebGL
       - Jamstack
     description: |
-      Extensive experience with developing accessible and responsive web applications; leveraging data-binding and other cutting edge technologies to deliver impressive application-like experiences to users on all platforms. I also have experience with employing micro-frontend architectures to produce cohesive web applications that are implemented by multiple independent teams.
+      Extensive experience with developing accessible and responsive web applications; leveraging data-binding and other cutting edge technologies to deliver impressive application-like experiences to users on all platforms. I also have extensive experience with employing micro-frontend architectures to produce cohesive web applications that are implemented by multiple independent teams.
 
   - name: Developer Operations
     level: Expert
@@ -78,33 +78,47 @@ skills:
     description: |
       Experienced with continuous integration and continuous deployment practices with a strong interest in cloud services and scalable & distributed architecture.
 
-  - name: AI Integration Development
-    level: Learning
+  - name: AI Application Development
+    level: Proficient
     buzzwords:
       - MCP
-      - RAG
       - A2A
-      - Semantic Kernel
+      - Claude
       - GitHub Copilot
-      - OpenAI
+      - Microsoft Agent Framework
+      - Google ADK
+      - LangChain
+      - AWS Bedrock AgentCore
     description: |
-      Focusing my learning on AI architecture, with an emphasis on exposing functionality to LLMs to enable agentic behavior. I'm also actively exploring tools such as GitHub Copilot and Cursor to optimize my development workflows.
+      Focusing my learning on AI architecture, with an emphasis on exposing functionality to LLMs to enable agentic behavior. I'm also actively exploring tools such as GitHub Copilot, Cursor and OpenCode to optimize my development workflows.
 
 jobs:
+
+  - title: Platform Staff Engineer
+    company: Just Eat Takeaway
+    logo: brands/just-eat-takeaway.png
+    started: 2025-10-01
+    description: |
+      I recently moved into a Staff Engineer role within Platform Engineering, focusing on enabling product teams with governed, AI-powered tooling. This has included evaluating PR code-review tools and testing approaches for agent-based applications. More recently, I joined a new platform team building capabilities that allow product teams to rapidly develop agent applications, including prompt management in the data plane, infrastructure for agent memory and RAG, and a registry enabling agent-to-agent communication.
 
   - title: Staff Engineer
     company: Just Eat Takeaway
     logo: brands/just-eat-takeaway.png
     started: 2022-07-01
+    finished: 2025-10-01
     projects:
-      - name: OneApp
-        summary: I contributed to the first phase of consolidating the Just Eat and Takeaway platforms that aims to provide a single customer experience across all markets while maintaining the existing back-office systems. I designed transitional components that ensured changes made to restaurants on the Takeaway platform appeared on the Just Eat platform; utilizing emerging technologies such as Kafka and Kafka Connect.
+      - name: Team Domain Reorganization
+        summary: This project was the first challenge I tackled as a Staff Engineer. The teams were slowed by heavy cross-dependencies caused by fragmented ownership across multiple domains. I proposed a model where each team fully owned a single domain, including structured handover plans. I then partnered with the Engineering Manager to secure leadership support and dedicated time to execute the transition.
+      - name: One App
+        summary: I contributed to the first phase of consolidating the Just Eat and Takeaway platforms that aims to provide a single customer experience across all markets while maintaining the existing back-office systems. I designed transitional components that ensured changes made to restaurants on the Takeaway platform appeared on the Just Eat platform; utilizing emerging technologies at the company such as Kafka and Kafka Connect.
+      - name: One Backoffice
+        summary: Following the One App initiative, I led the transition from a transitional architecture to a single back-office system for my domains, I designing and documenting Strangler Fig-based migrations with anti-corruption layers and aligning stakeholders to deliver the changes in steps that wouldn't disrupt our dependent systems.
     description: |
-      I oversee six teams, across three timezones and two technical platforms; collectively these teams are responsible for partner data, availability, reachability, verification (KYC & KYB), onboarding and various support tooling.
+      Led six cross-functional teams delivering products across three technical platforms in the UK, Canada, and the Netherlands; collectively these teams are responsible for partner data, availability, reachability, verification (KYC & KYB), onboarding and various support tooling.
 
-      My overarching goal has been to consolidate these domains on the Just Eat and Takeaway platform; aiming for one team owning a single set of services for each domain, enabling the domains to move faster whilst reducing duplication. I've developed transition plans following the Strangler Fig pattern and working closely with product managers and stakeholders to ensure they understand the technical constaints and existing behaviors that dependant systems require to be maintained.
+      I acted as a cross-domain technical leader, collaborating with engineering and product to design and deliver cross-domain features to the platform. This regularly involved authoring and presenting design documents and ADRs to stakeholders and engineering hubs to drive alignment and decision-making. I partnered closely with engineering managers, principal engineers and product owners to shape technical plans and roadmaps, playing a pivotal role in a high-priority platform consolidation initiative.
 
-      Additionally, I collaborate with other teams, guilds and principal engineers to shape platform guidance notably around asynchronous messaging, HTTP API design and Lambda development practices. I make time to produce proof-of-concepts and experiment with new technologies, enabling me to give my teams more informed guidance. Furthermore, I ensure that my teams have the necessary time to work on larger technical initiatives by feeding into the delivery planning process.
+      I mentored senior and mid-level engineers, guiding solution design in line with company best practices, such as Goldilocks service design and the use of ECST. I delivered multiple proof-of-concepts to address emerging challenges facing my teams, such as enabling Salesforce to consume platform events via Redpanda Connect and proposing a mono-repo strategy to consolidate a growing number of nano-services into more manageable Goldilocks services. I would often evangelize these ideas further beyond my immediate domain, working with guilds (some of which I chaired) and architecture hubs to convert proofs-of-concept into company-wide guidance and documentation, accelerating delivery across the organization.
 
   - title: Senior Engineer
     company: Just Eat Takeaway
@@ -113,7 +127,7 @@ jobs:
     finished: 2022-07-01
     projects:
       - name: Restaurant Performance
-        summary: I played a key role in developing an event-driven system that aggregated partner order and review data from across the platform to generate a performance score. This score was easily accessible by partners and included improvement recommendations while also affecting the partner's search ranking.
+        summary: I played a key role in developing an event-driven system that aggregated partner order and review data from across the platform to generate a performance score. This score was easily accessible by partners via a dashboard that included improvement recommendations while also affecting the partner's search ranking.
       - name: Just Log
         summary: As the lead contributor, I supported the development of a lightweight and extensible JavaScript library for logging. This library enables quick and easy pushing of logs to multiple sources, including Just Eat's ELK stack. I also provided valuable support teams across the business, ensuring successful implementation of the library.
       - name: Orderpad Lite
@@ -168,20 +182,20 @@ qualifications:
 
 projects:
 
-  - name: Vintage Tea Party
-    url: https://vintageteaparty.co
+  - name: Home TRMNL
+    url: https://github.com/lsphillips/home-trmnl
     description: |
-      A project to support a friend's small business. A responsive website hosted for free in GitLab that employs a Jamstack architecture; utilizing web components powered by Lit for progressive enhancements and Netlify CMS for user friendly content management.
+      A headless BYOS (Bring Your Own Server) implementation for [TRMNL](https://usetrmnl.com/) devices. Originally built for my own use, I'm in the process of generalizing it for anyone to use.
 
   - name: BPS
     url: https://github.com/lsphillips/bps
     description: |
       A library and CLI tool for creating and applying BPS (Binary Patching System) patches.
 
-  - name: Crumble
-    url: https://github.com/lsphillips/crumble
+  - name: Vintage Tea Party
+    url: https://vintageteaparty.co
     description: |
-      A RFC-6265 compliant library that makes reading and writing cookies easy.
+      A project to support a friend's small business. A responsive website hosted for free in GitLab that employs a Jamstack architecture; utilizing web components powered by Lit for progressive enhancements and Netlify CMS for user friendly content management.
 
   - name: WaitForTheElement
     url: https://github.com/lsphillips/wait-for-the-element
@@ -193,10 +207,10 @@ projects:
     description: |
       An implementation of the cooperative cancellation model that is heavily inspired by the .NET implementation.
 
-  - name: RuntimeError
-    url: https://github.com/lsphillips/run-time-error
+  - name: Crumble
+    url: https://github.com/lsphillips/crumble
     description: |
-      A better error that is inspired by the Java exception that is also serializable to JSON.
+      A RFC-6265 compliant library that makes reading and writing cookies easy.
 
   - name: Log2stream
     url: https://github.com/lsphillips/log2stream
@@ -206,7 +220,7 @@ projects:
   - name: KoCo
     url: https://github.com/lsphillips/ko-co
     description: |
-      Adds support for the Konami Code; making your website automatically cool.
+      Adds support for the Konami Code to your website; making your website automatically cool.
 
 interests:
   hobbies:
@@ -217,4 +231,4 @@ interests:
     - Japanese Culture
     - Video Games
   summary: |
-    Outside the workplace, I enjoy coding, tinkering with my Raspberry Pis and tweaking my Arch Linux setup. Away from the computer I enjoy playing board games, treating my Guinea Pigs like royalty and playing Badminton. I also love to travel to Japan whenever I get the chance as I love to explore their culture.
+    Outside the workplace, I enjoy coding, tinkering with my Raspberry Pis, partner-proofing my smart home automation and pointlessly tweaking my Arch Linux setup. Away from the computer I enjoy playing board games, treating my Guinea Pigs like royalty, playing Badminton and traveling to Japan whenever I get the chance as I love to explore their culture.
