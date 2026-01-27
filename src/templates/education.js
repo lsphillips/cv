@@ -1,11 +1,16 @@
 import {
-	formatDate
+	formatToIsoDate
 } from './helpers.js';
 import {
 	renderMarkdown
 } from './markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function renderQualificationDate (date)
+{
+	return new Date(date).getFullYear();
+}
 
 function renderQualification ({
 	name,
@@ -24,7 +29,7 @@ function renderQualification ({
 			</h3>
 
 			<small class="qualification__school">
-				${ school } &middot; <time datetime="${ formatDate(started, 'YYYY-MM-DD') }"> ${ formatDate(started, 'YYYY') } </time> &dash; <time datetime="${ formatDate(completed, 'YYYY-MM-DD') }"> ${ formatDate(completed, 'YYYY') } </time>
+				${ school } &middot; <time datetime="${ formatToIsoDate(started) }"> ${ renderQualificationDate(started) } </time> &dash; <time datetime="${ formatToIsoDate(completed) }"> ${ renderQualificationDate(completed) } </time>
 			</small>
 
 		</header>

@@ -89,7 +89,7 @@ async function renderPages ()
 		({ cv, images } = await readCv(datadir));
 
 		// Copy images.
-		await cp(images, join(outdir, 'images'), {
+		await cp(images, join(outdir, paths.images), {
 			recursive : true
 		});
 

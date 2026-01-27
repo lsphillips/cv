@@ -1,5 +1,5 @@
 import {
-	formatDate
+	formatToIsoDate
 } from './helpers.js';
 import {
 	renderMarkdown
@@ -33,6 +33,15 @@ function renderProjects ({
 	</ul>`;
 }
 
+function renderJobDate (date)
+{
+	return new Intl.DateTimeFormat('en', {
+		month : 'long',
+		year  : 'numeric'
+	})
+		.format(date);
+}
+
 function renderJob ({
 	logo,
 	company,
@@ -56,7 +65,7 @@ function renderJob ({
 			</h3>
 
 			<small class="job__duration">
-				<time datetime="${ formatDate(started, 'YYYY-MM-DD') }"> ${ formatDate(started, 'MMMM YYYY') } </time> &dash; ${ finished ? `<time datetime="${ formatDate(finished, 'YYYY-MM-DD') }"> ${ formatDate(finished, 'MMMM YYYY') } </time>` : 'Present' }
+				<time datetime="${ formatToIsoDate(started) }"> ${ renderJobDate(started) } </time> &dash; ${ finished ? `<time datetime="${ formatToIsoDate(finished) }"> ${ renderJobDate(finished) } </time>` : 'Present' }
 			</small>
 
 		</header>

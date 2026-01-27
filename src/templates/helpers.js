@@ -1,10 +1,6 @@
-import moment from 'moment';
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-export function formatDate (timestamp, format)
+export function formatToIsoDate (timestamp)
 {
-	return moment(timestamp).format(format);
+	return new Date(timestamp).toISOString().slice(0, 10);
 }
 
 export function toSchemalessUrl (url)
