@@ -1,9 +1,9 @@
 import {
-	formatToIsoDate
-} from './helpers.js';
+	toIsoDate
+} from './helpers/string.js';
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -25,7 +25,7 @@ function renderProjects ({
 		${ projects.reduce((html, project) => html + `<li>
 			<h4> ${ project.name } </h4>
 			<p>
-				${ renderMarkdown(project.summary, {
+				${ toHtml(project.summary, {
 					inline : true
 				}) }
 			</p>
@@ -65,14 +65,14 @@ function renderJob ({
 			</h3>
 
 			<small class="job__duration">
-				<time datetime="${ formatToIsoDate(started) }"> ${ renderJobDate(started) } </time> &dash; ${ finished ? `<time datetime="${ formatToIsoDate(finished) }"> ${ renderJobDate(finished) } </time>` : 'Present' }
+				<time datetime="${ toIsoDate(started) }"> ${ renderJobDate(started) } </time> &dash; ${ finished ? `<time datetime="${ toIsoDate(finished) }"> ${ renderJobDate(finished) } </time>` : 'Present' }
 			</small>
 
 		</header>
 
 		<div class="freeform job__description">
 
-			${ renderMarkdown(description) }
+			${ toHtml(description) }
 
 			${ renderProjects({
 				finished,

@@ -1,9 +1,9 @@
 import {
 	toKebabCase
-} from './helpers.js';
+} from './helpers/string.js';
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -27,7 +27,7 @@ function renderSkill ({
 		</ul>
 
 		<div class="freeform skill__description">
-			${ renderMarkdown(description) }
+			${ toHtml(description) }
 		</div>
 
 	</article>`;

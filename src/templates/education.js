@@ -1,9 +1,9 @@
 import {
-	formatToIsoDate
-} from './helpers.js';
+	toIsoDate
+} from './helpers/string.js';
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -29,13 +29,13 @@ function renderQualification ({
 			</h3>
 
 			<small class="qualification__school">
-				${ school } &middot; <time datetime="${ formatToIsoDate(started) }"> ${ renderQualificationDate(started) } </time> &dash; <time datetime="${ formatToIsoDate(completed) }"> ${ renderQualificationDate(completed) } </time>
+				${ school } &middot; <time datetime="${ toIsoDate(started) }"> ${ renderQualificationDate(started) } </time> &dash; <time datetime="${ toIsoDate(completed) }"> ${ renderQualificationDate(completed) } </time>
 			</small>
 
 		</header>
 
 		<div class="freeform qualification__description">
-			${ renderMarkdown(description) }
+			${ toHtml(description) }
 		</div>
 
 	</article>`;

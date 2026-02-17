@@ -1,6 +1,6 @@
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -23,7 +23,7 @@ export function renderInterests ({
 			</ul>
 
 			<div class="freeform interests__summary">
-				${ renderMarkdown(interests.summary) }
+				${ toHtml(interests.summary) }
 			</div>
 
 		</div>

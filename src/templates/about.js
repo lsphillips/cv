@@ -1,6 +1,6 @@
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -15,7 +15,7 @@ export function renderAbout ({
 		</h2>
 
 		<div class="freeform section__content">
-			${ renderMarkdown(person.introduction) }
+			${ toHtml(person.introduction) }
 		</div>
 
 	</section>`;

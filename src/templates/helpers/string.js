@@ -1,4 +1,4 @@
-export function formatToIsoDate (timestamp)
+export function toIsoDate (timestamp)
 {
 	return new Date(timestamp).toISOString().slice(0, 10);
 }

@@ -1,9 +1,9 @@
 import {
 	toSchemalessUrl
-} from './helpers.js';
+} from './helpers/string.js';
 import {
-	renderMarkdown
-} from './markdown.js';
+	toHtml
+} from './helpers/markdown.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -28,7 +28,7 @@ function renderProject ({
 		</header>
 
 		<div class="freeform project__description">
-			${ renderMarkdown(description) }
+			${ toHtml(description) }
 		</div>
 
 	</article>`;

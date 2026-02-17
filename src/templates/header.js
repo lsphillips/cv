@@ -1,6 +1,6 @@
 import {
 	toSchemalessUrl
-} from './helpers.js';
+} from './helpers/string.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

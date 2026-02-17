@@ -2,7 +2,7 @@ import MarkdownIt from 'markdown-it';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function renderMarkdown (markdown, {
+export function toHtml (markdown, {
 	inline = false
 } = {})
 {
