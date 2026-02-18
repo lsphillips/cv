@@ -4,7 +4,7 @@ import {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function renderHeader ({
+export function renderHtml ({
 	person,
 	contact
 }, urls)
@@ -46,4 +46,19 @@ export function renderHeader ({
 		</li>
 
 	</ul>`;
+}
+
+export function renderMarkdown ({
+	person,
+	contact
+})
+{
+	return `# ${ person.name } - ${ person.tagline }
+
+## Contact Information
+
+- **Email:** Available on request
+- **Phone:** Available on request
+- **LinkedIn:** ${ contact.linkedin }
+- **GitHub:** ${ contact.github }`;
 }

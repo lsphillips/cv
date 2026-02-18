@@ -10,7 +10,8 @@ import {
 	createUrlBuilder
 } from './url-builder.js';
 import {
-	renderIndex
+	renderHtml,
+	renderMarkdown
 } from './templates/index.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -27,8 +28,9 @@ export async function renderCv (outdir, cv, {
 
 	const urls = createUrlBuilder(paths, timestamp);
 
+	// HTML.
 	const page = await nano.process(
-		renderIndex(cv, urls),
+		renderHtml(cv, urls),
 		{
 			collapseAttributeWhitespace : true,
 			collapseWhitespace          : 'aggressive',
@@ -54,5 +56,14 @@ export async function renderCv (outdir, cv, {
 		}
 	);
 
-	await writeFile(join(outdir, 'index.html'), page.html, 'utf8');
+	await writeFile(
+		join(outdir, 'index.html'), page.html, 'utf8'
+	);
+
+	// Markdown.
+	const markdown = renderMarkdown(cv, urls);
+
+	await writeFile(
+		join(outdir, 'index.html.md'), markdown, 'utf8'
+	);
 }

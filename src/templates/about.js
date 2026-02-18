@@ -4,7 +4,7 @@ import {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function renderAbout ({
+export function renderHtml ({
 	person
 })
 {
@@ -19,4 +19,13 @@ export function renderAbout ({
 		</div>
 
 	</section>`;
+}
+
+export function renderMarkdown ({
+	person
+})
+{
+	return `## About
+
+${ person.introduction.trim() }`;
 }

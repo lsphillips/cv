@@ -4,7 +4,7 @@ import {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function renderInterests ({
+export function renderHtml ({
 	interests
 })
 {
@@ -29,4 +29,15 @@ export function renderInterests ({
 		</div>
 
 	</section>`;
+}
+
+export function renderMarkdown ({
+	interests
+})
+{
+	return `## Interests & Hobbies
+
+${ interests.hobbies.map(hobby => `- ${ hobby }`).join('\n') }
+
+${ interests.summary.trim() }`;
 }
